@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP JS</title>
+        <!-- favicon icon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./logo/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./logo/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./logo/favicon-16x16.png">
+        <link rel="manifest" href="./logo/site.webmanifest">
+        <!-- favicon end -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- top level div -->
+    <div class="wrapper">
+
+        <h1>WEATHER APP</h1>
+        <!--  tab containear --> 
+
+        <div class="tab-containear">
+
+            <p class="tab" data-userWeather>Your Weather</p>
+            <p class="tab" data-searchWeather>Search Weather</p>
+        </div>
+
+        <!-- info containear -->
+
+        <div class="weather-containear">
+
+            <!-- grant location ui -->
+
+            <div class="grant-location-containear sub-containear">
+                <img src="./assets/location.png" alt="" width="80" height="80" loading="lazy">
+                <p>Grant location Access</p>
+                <p>Allow Access to get weather information</p>
+                <button class="btn" data-grantAccess>Grant Access</button>
+            </div>
+
+
+            <!--  search form for seaching city name -->
+            <form class="form-containear" data-searchForm>
+
+                <input type="text" placeholder="Search For City" data-searchInput>
+                <button class="btn" type="submit">
+                    <img src="./assets/search.png" alt="" width="20" height="20" loading="lazy">
+                </button>
+            </form>
+
+
+            <!-- loading Screen section -->
+
+            <div class="loading-containear sub-containear">
+
+                <img src="./assets/loading.gif" alt="" width="150" height="150" loading="lazy">
+                <p>Loading</p>
+
+            </div>
+
+
+            <!-- weather information -->
+
+            <div class="user-info-containear sub-containear">
+                <!--  name of city and flag of city -->
+                <div class="name">
+                    <p data-cityName></p>
+                    <img data-countyIcon>
+                </div>
+
+                <!-- weather information  -->
+
+                <p data-weatherDescription></p>
+                <!-- weather icon -->
+                <img data-weatherIcon>
+                <!-- temp information -->
+
+                <p data-temp></p>
+
+                <!-- three card content parameeter -->
+
+                <div class="parameter-containear">
+                    
+                    <!-- First card Start -->
+                    <div class="parameter">
+                        <img src="./assets/wind.png" alt="">
+                        <p>Wind Speed</p>
+                        <p data-windSpeed></p>
+                    </div>
+                    <!-- First card ENd -->
+
+                    <!-- second card start -->
+
+                    <div class="parameter">
+                        <img src="./assets/humidity.png" alt="">
+                        <p>Humidity</p>
+                        <p data-humidaty></p>
+                    </div>
+                    <!-- second card End -->
+
+
+                    <!-- third card Start -->
+                    <div class="parameter">
+                        <img src="./assets/cloud.png" alt="">
+                        <p>Clouds</p>
+                        <p data-cloudiness></p>
+                    </div>
+
+                    <!-- third card Start -->
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <!-- <script src="./app.js"></script>    -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
